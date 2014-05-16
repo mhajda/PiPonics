@@ -11,7 +11,7 @@ logger.info("Starting Logger...")
 logger.info(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S ") + "Script Started" )
 time.sleep(1)
 
-GPIO.setmode(GPIO.BCM) ## Use BOARD pin numbering
+GPIO.setmode(GPIO.BCM) ## Use Broadcom pin numbering
 gpio_pump=24
 gpio_drain=18
 
@@ -21,7 +21,7 @@ GPIO.output(gpio_pump, True)
 GPIO.setup(gpio_drain, GPIO.OUT) 
 GPIO.output(gpio_drain, True) 
 
-script_path = "/home/pi/Aquaponics/prod/"
+script_path = "/home/pi/Aquaponics/PiPonics/"
 pump_file = script_path + "pump.txt"
 drain_file = script_path + "drain.txt"
 
